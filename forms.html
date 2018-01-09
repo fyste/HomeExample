@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms example</title>
+</head>
+<body>
+	<div>
+		<a href="../index.html">Home</a>
+	</div>
+	<h1>Forms example</h1>
+	<form action="userData.html" method="GET">
+	<div>
+		<label for="usernameField">Username:</label>
+		<input id="usernameField" type="text" name="username" value="Rossi" 
+		placeholder="Username" autocomplete="off" maxlength="25" pattern="^[A-Z][0-9]$" />
+	</div>
+		<div>
+		<label for="pwdField">Password:</label>
+		<input id="pwdField" type="password" name="password"/>
+	</div>
+		<label for="cityField">Città di residenza:</label>
+		<select id="cityField" name="city">
+		<option value="04" selected>Verona</option>
+		<option value="01">Milano</option>
+		<option value="02">Bergamo</option>
+		<option value="03">Roma</option>
+		</select>
+	</div>
+	<div>
+		<label for="cityWorkField">Città di lavoro:</label>
+		<select id="cityWorkField" name="cityWork" multiple>
+		<option value="04" selected="select">Verona</option>
+		<option value="01">Milano</option>
+		<option value="02">Bergamo</option>
+		<option value="03">Roma</option>
+			<option value="05">Palermo</option>
+		</select>
+	</div>
+	<div>
+		<label for= "maleRadio">Maschio</label>
+		<input id="maleRadio" type="radio" name="gender" value="male" checked/>	
+		<label for= "femaleRadio">Femmina</label>
+		<input id="femaleRadio" type="radio" name="gender" value="female"/>	
+	</div>	
+		<div>
+		<label for= "foodMeat">Carne</label>
+		<input id="foodMeat" type="checkbox" name="foodPreference" value="meat" checked/>	
+				<label for= "foodFish">Pesce</label>
+		<input id="foodFish" type="checkbox" name="foodPreference" value="fish" />	
+						<label for= "foodVegetable">Verdure</label>
+		<input id="foodVegetable" type="checkbox" name="foodPreference" value="veg"/>	
+	</div>	
+		<div>
+		<label for="birthdateField">Data di nascita:</label>
+		<input id="birthdateField" type="date" name="birthdate" 
+		placeholder="Birthdate" />
+	</div>
+			<div>
+		<label for="arrivalField">Ora di arrivo:</label>
+		<input id="arrivalField" type="time" name="arrival" 
+		placeholder="Arrival" />
+	</div>
+				<div>
+		<label for="ageField">Età:</label>
+		<input id="ageField" type="number" name="age" 
+		placeholder="Age" min=10 max=140 step="2"/>
+	</div>
+					<div>
+		<label for="emailField">e-mail:</label>
+		<input id="emailField" type="email" name="mail" 
+		placeholder="e-mail" />
+	</div>
+						<div>
+		<label for="childAgeField">Età figlio:</label>
+		<input id="childAgeField" type="range" name="childAge" 
+		placeholder="ChildAge" />
+	</div>
+						<div>
+		<label for="urlField">Indirizzo URL:</label>
+		<input id="urlField" type="url" name="url" 
+		placeholder="Url" />
+	</div>
+	<div>
+		<label for="commentsField">Commenti :</label>
+		<textarea id="commentsField" name="comments" cols=40 rows=4></textarea>
+	</div>
+		
+	<div>
+		<input  type="submit" name=""/>
+	</div>
+	</form>
+</body>
+</html>
